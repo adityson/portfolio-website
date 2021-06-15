@@ -28,10 +28,10 @@ const Nav = () => {
                 <LinkLi to='/about' LinkText='About' />
             </Flex>
             <Flex>
-                <LinkIcon to='https://github.com/' borderRad='50px'>
+                <LinkIcon to='https://github.com/'>
                     <AiFillGithub size='2.5rem' />
                 </LinkIcon>
-                <LinkIcon to='https://linkedin.com/' borderRad='0px'>
+                <LinkIcon to='https://linkedin.com/'>
                     <AiFillLinkedin size='2.5rem' />
                 </LinkIcon>
             </Flex>
