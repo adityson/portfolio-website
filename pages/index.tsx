@@ -17,7 +17,7 @@ export default function Home() {
           <Text fontSize='lg' maxW='650px'>
             Welcome to my website! Finally decided to make one about myself. 
             I plan to regularly maintain the domain and add updates to the sections 
-            as I venture in the world of Software Development.
+            as I venture into the world of Software Development.
           </Text>
         </Flex>
       </Flex>
