@@ -29,10 +29,10 @@ const Nav = () => {
             </Flex>
             <Flex>
                 <LinkIcon to='https://github.com/'>
-                    <AiFillGithub size='2.5rem' />
+                    <AiFillGithub size='36px' />
                 </LinkIcon>
                 <LinkIcon to='https://linkedin.com/'>
-                    <AiFillLinkedin size='2.5rem' />
+                    <AiFillLinkedin size='36px' />
                 </LinkIcon>
             </Flex>
         </Flex>
