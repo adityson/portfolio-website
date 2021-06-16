@@ -8,7 +8,7 @@ export default function Home() {
         <title>Home|Portfolio</title>
       </Head>
 
-      <Flex height='100vh' justifyContent='center' alignItems='center' bgColor='#ebf8ff'>
+      <Flex height='100vh' justifyContent='center' alignItems='center'>
         <Flex margin="0 30px">
           <Image src='/static/images/dogepfp.jpg' boxSize='200px' borderRadius='full' />
         </Flex>
