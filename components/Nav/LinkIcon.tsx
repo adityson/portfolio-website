@@ -8,7 +8,7 @@ interface Props {
 
 const LinkIcon = ({ children, to }: Props) => {
     return (
-        <li style={{ listStyle: 'none', margin: '0 24px' }}>
+        <li style={{ listStyle: 'none', margin: '0 20px' }}>
             <Button 
                 as='a' 
                 href={to}

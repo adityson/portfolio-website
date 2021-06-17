@@ -9,10 +9,11 @@ interface LinkLiProps {
 
 const LinkLi = ({ to, LinkText }: LinkLiProps) => {
   return (
-    <li style={{ listStyle: "none", fontSize: "1.2rem", margin: " 0 10px" }}>
+    <li style={{ listStyle: "none", margin: " 0 10px" }}>
       <Link href={to}>
         <Button 
             as="a" 
+            size='md'
             variant="ghost"
             padding='8px'
             borderRadius='15px'

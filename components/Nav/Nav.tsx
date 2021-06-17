@@ -11,6 +11,7 @@ const Nav = () => {
             <Flex>
                 <Link href='/'>
                     <Heading 
+                        as='h4'
                         size='md'
                         padding='8px'
                         margin='0 20px'
@@ -25,7 +26,6 @@ const Nav = () => {
             <Flex justifyContent='space-between'>
                 <LinkLi to='/projects' LinkText='Projects' />
                 <LinkLi to='/tech' LinkText='Technologies' />
-                <LinkLi to='/about' LinkText='About' />
             </Flex>
             <Flex>
                 <LinkIcon to='https://github.com/'>

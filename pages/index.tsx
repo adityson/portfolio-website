@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import { Flex, Heading, Text, Image } from '@chakra-ui/react'
+import About from '../components/About/About'
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
           </Text>
         </Flex>
       </Flex>
+      <About />
     </>
   )
 }
