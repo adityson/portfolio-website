@@ -1,3 +1,4 @@
 body {
-  background: #ebf8ff !important;
+  /* background: #ebf8ff !important; */
+  background-image: url(/static/images/bgpattern.svg) !important;
 }
