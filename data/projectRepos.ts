@@ -10,7 +10,7 @@ export const projectRepos: projectRepoType[] = [
     {
         id: 'portfolioweb',
         name: 'Portfolio Website',
-        createMonth: `June '21`,
+        createMonth: `June '21 -`,
         image: '',
         description: `You're here right now. I was learning NextJS so thought of making a website to showcase my own projects and achievements. This project is really close to me and I'll keep on learning as it grows.`
     },
