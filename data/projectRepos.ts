@@ -8,7 +8,7 @@ export interface projectRepoType {
 
 export const projectRepos: projectRepoType[] = [
     {
-        id: 'portfolioweb',
+        id: 'pfweb',
         name: 'Portfolio Website',
         createMonth: `June '21 -`,
         image: '',

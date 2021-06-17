@@ -10,7 +10,9 @@ interface projectProps {
 const Project = ({ projectInfo }: projectProps) => {
     return (
         <Box w='500px' rounded='20px' overflow='hidden' boxShadow='xl' bg='#EDF2F7'>
-            <Image src='/static/images/proimg.jpg' />
+            <Image 
+                src='/static/images/pfweb.jpg' 
+            />
             <Box p={5}>
                 <Heading as='h3' size='lg'>{projectInfo.name}</Heading>
                 <Stack isInline align='baseline' my={2} justify='space-between'>
