@@ -13,7 +13,7 @@ const LinkLi = ({ to, LinkText }: LinkLiProps) => {
       <Link href={to}>
         <Button 
             as="a" 
-            size='md'
+            size='lg'
             variant="ghost"
             padding='8px'
             borderRadius='15px'

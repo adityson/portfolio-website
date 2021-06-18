@@ -11,8 +11,8 @@ const Nav = () => {
             <Flex>
                 <Link href='/'>
                     <Heading 
-                        as='h4'
-                        size='md'
+                        as='h3'
+                        size='lg'
                         padding='8px'
                         margin='0 20px'
                         borderRadius='15px'
