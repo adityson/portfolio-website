@@ -1,30 +1,37 @@
 import React from 'react'
-import { Box, Image, Heading, Badge, Text, Stack, Button } from '@chakra-ui/react'
+import { Box, Flex, Image, Heading, Badge, Text, Stack, Button } from '@chakra-ui/react'
 import { projectRepoType } from '../../data/projectRepos'
 import { VscGithubAlt } from 'react-icons/vsc'
+import { repoType } from '../../pages/api/github';
 
 interface projectProps {
     projectInfo: projectRepoType;
+    repo: repoType;
 }
 
-const Project = ({ projectInfo }: projectProps) => {
+const Project = ({ projectInfo, repo }: projectProps) => {
     return (
-        <Box w='500px' rounded='20px' overflow='hidden' boxShadow='xl' bg='#EDF2F7'>
+        <Flex marginBottom={20}> 
+        <Box w='1000px' rounded='20px' overflow='hidden' boxShadow='xl' bg='#EDF2F7'>
             <Image 
-                src='/static/images/pfweb.jpg' 
+                src={projectInfo.image || `https://raw.githubusercontent.com/adityson/polls-fest/master/pollsfest.png`} 
             />
             <Box p={5}>
-                <Heading as='h3' size='lg'>{projectInfo.name}</Heading>
+                <Stack isInline align='center' justifyContent='space-between'>
+                    <Heading as='h3' size='lg'>{projectInfo.name}</Heading>
+                    <Badge variant='solid' colorScheme='green' rounded='full' px={2} py={1} fontSize='sm'>{repo.language}</Badge>
+                </Stack>
                 <Stack isInline align='baseline' my={2} justify='space-between'>
                     <Text fontSize='md' fontWeight='semibold'>{projectInfo.createMonth}</Text>
-                    <Badge variant='solid' rounded='full' px={2} fontSize='sm'>Typescript</Badge>
+                    <Text fontSize='sm' fontWeight='light'>Last Updated: {new Date(repo.pushed_at).toLocaleDateString()}</Text>
                 </Stack>
                 <Text fontSize='md' fontWeight='normal' my={2}>{projectInfo.description}</Text>
             </Box>
             <Box textAlign='center'>
                 <Button 
                     as='a' 
-                    href='https://github.com/'
+                    href={repo.html_url}
+                    position='inherit'
                     variant='outline' 
                     borderColor='#A0AEC0'
                     leftIcon={<VscGithubAlt />} 
@@ -35,6 +42,7 @@ const Project = ({ projectInfo }: projectProps) => {
                 </Button>
             </Box>
         </Box>
+        </Flex>
     )
 }
 

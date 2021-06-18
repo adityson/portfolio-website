@@ -1,15 +1,24 @@
 import React from 'react'
-import { Flex } from '@chakra-ui/react'
+import { SimpleGrid } from '@chakra-ui/react'
 import Project from './Project'
 import { projectRepos } from '../../data/projectRepos'
+import { repoType } from '../../pages/api/github';
 
-const ProjectsShowcase = () => {
+interface props {
+    reposAll: repoType[];
+}
+
+const ProjectsShowcase = ({ reposAll }: props) => {
     return (
-        <Flex wrap='wrap' justify='space-around' padding='0 100px' marginTop={16}>
+        <SimpleGrid columns={1} marginTop={16} placeItems='center'>
             {projectRepos.map((project) => (
-                <Project key={project.id} projectInfo={project} />
+                <Project 
+                    key={project.id} 
+                    projectInfo={project} 
+                    repo={reposAll.filter((r: repoType) => r.name === project.id)[0]}
+                />
             ))}
-        </Flex>
+        </SimpleGrid>
     )
 }
 
