@@ -15,11 +15,11 @@ export default function Home() {
 
       <Flex id='intro' height='100vh' justifyContent='center' alignItems='center'>
         <Flex margin="0 30px">
-          <Image src='/static/images/dogepfp.jpg' boxSize='200px' borderRadius='24px' />
+          <Image src='/static/images/dogepfp.jpg' boxSize='250px' borderRadius='24px' />
         </Flex>
         <Flex flexDirection='column'>
           <Heading as='h1' size='4xl' marginBottom='20px' color='#065666'> Hello, I'm Aditya! </Heading>
-          <Text fontSize='lg' maxW='650px'>
+          <Text fontSize='xl' maxW='650px'>
             Welcome to my website! Finally decided to make one about myself. 
             I plan to regularly maintain the domain and add updates to the sections 
             as I venture into the world of Software Development.

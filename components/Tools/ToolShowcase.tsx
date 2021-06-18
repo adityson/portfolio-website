@@ -12,7 +12,7 @@ const ToolShowcase = () => {
                 </Heading>
                 <Text fontSize='sm' textAlign='center' marginTop='10px'>Tools that I find useful.</Text>
             </Flex>
-            <SimpleGrid columns={2} mx={12} placeItems='center'>
+            <SimpleGrid columns={2} mx={20} placeItems='center'>
                 {tools.map((tool) => (
                     <ToolSingle key={tool.id} toolInfo={tool} />
                 ))}

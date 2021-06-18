@@ -5,7 +5,7 @@ import { frontTechnos, backTechnos } from '../../data/technoAll';
 
 const TechShowcase = () => {
     return (
-        <Flex wrap='wrap' padding='0 60px' marginTop={16} justifyContent='space-around'>
+        <Flex wrap='wrap' padding='0 100px' marginTop={16} justifyContent='space-around'>
             <Flex flexDirection='column' alignItems='center' w='400px'>
                 <Image boxSize='200px' my={2} src='/static/images/frontend.png' />
                 <Heading as='h3' size='xl' my={2}>
