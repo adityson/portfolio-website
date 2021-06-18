@@ -5,7 +5,7 @@ import { tools } from '../../data/tools';
 
 const ToolShowcase = () => {
     return (
-        <Flex id='tools' flexDirection='column' marginBottom='220px'>
+        <Flex id='tools' flexDirection='column' marginBottom='180px'>
             <Flex flexDirection='column' marginBottom={8}>
                 <Heading as='h3' size='2xl' marginTop='100px' textAlign='center' width='100%'>
                     Tools

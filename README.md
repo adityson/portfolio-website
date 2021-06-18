@@ -1,8 +1,7 @@
 # My Portfolio Website
 
-### Components to add:
-* Navbar (links to different pages)
-* Intro to me
-* Projects ()
-* Technologies I'm familiar with
-* Footer 
+## A website all about me.
+
+------
+
+### Built with Next.js and Typescript.

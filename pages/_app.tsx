@@ -12,6 +12,13 @@ const theme = extendTheme({
           boxShadow: 'none'
         }
       }
+    },
+    Link: {
+      baseStyle: {
+        _focus: {
+          boxShadow: 'none'
+        }
+      }
     }
   }
 })

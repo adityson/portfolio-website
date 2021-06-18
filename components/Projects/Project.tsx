@@ -14,7 +14,7 @@ const Project = ({ projectInfo, repo }: projectProps) => {
         <Flex marginBottom={20}> 
         <Box w='1000px' rounded='20px' overflow='hidden' boxShadow='xl' bg='#EDF2F7'>
             <Image 
-                src={projectInfo.image || `https://raw.githubusercontent.com/adityson/polls-fest/master/pollsfest.png`} 
+                src={projectInfo.image} 
             />
             <Box p={5}>
                 <Stack isInline align='center' justifyContent='space-between'>

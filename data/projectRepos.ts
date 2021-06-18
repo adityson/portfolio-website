@@ -11,6 +11,7 @@ export const projectRepos: projectRepoType[] = [
         id: 'portfolio-website',
         name: 'Portfolio Website',
         createMonth: `June '21 -`,
+        image: `https://raw.githubusercontent.com/adityson/portfolio-website/master/public/static/images/portfolioss.png`,
         description: `You're here right now. I was learning NextJS so thought of making a website to showcase my own projects and achievements. This project is really close to me and I'll keep on learning as it grows.`
     },
     {

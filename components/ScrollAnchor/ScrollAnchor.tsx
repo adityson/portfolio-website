@@ -21,8 +21,8 @@ const ScrollAnchor = ({ jump }: Props) => {
             href={scrollDir ? jump[0]:jump[1]} 
             onClick={scrollHandler} 
             position='fixed' 
-            bottom={8} 
-            right={8}
+            bottom={14} 
+            right={4}
         >
             {scrollDir ? <FiArrowUpCircle size='36px' /> : <FiArrowDownCircle size='36px' />}
         </Box>
