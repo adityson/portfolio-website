@@ -9,7 +9,7 @@ const Nav = () => {
     return (
         <Flex as='nav' position='fixed' align='center' wrap='wrap' w='100%' justifyContent='space-around' padding='10px 5%' bgColor='#38B2AC' color='white'>
             <Flex>
-                <Link href='/'>
+                <Link href='/#intro'>
                     <Heading 
                         as='h3'
                         size='lg'
@@ -25,10 +25,10 @@ const Nav = () => {
             </Flex>
             <Flex justifyContent='space-between'>
                 <LinkLi to='/projects' LinkText='Projects' />
-                <LinkLi to='/tech' LinkText='Technologies' />
+                <LinkLi to='/tech#tech' LinkText='Technologies' />
             </Flex>
             <Flex>
-                <LinkIcon to='https://github.com/'>
+                <LinkIcon to='https://github.com/adityson/'>
                     <AiFillGithub size='36px' />
                 </LinkIcon>
                 <LinkIcon to='https://linkedin.com/'>
