@@ -1,15 +1,19 @@
 import Head from 'next/head'
 import { Flex, Heading, Text, Image } from '@chakra-ui/react'
 import About from '../components/About/About'
+import ScrollAnchor from '../components/ScrollAnchor/ScrollAnchor'
 
 export default function Home() {
+
+  const anc: string[] = ['#about', '#intro'];
+
   return (
     <>
       <Head>
         <title>Home|Portfolio</title>
       </Head>
 
-      <Flex height='100vh' justifyContent='center' alignItems='center'>
+      <Flex id='intro' height='100vh' justifyContent='center' alignItems='center'>
         <Flex margin="0 30px">
           <Image src='/static/images/dogepfp.jpg' boxSize='200px' borderRadius='24px' />
         </Flex>
@@ -22,6 +26,7 @@ export default function Home() {
           </Text>
         </Flex>
       </Flex>
+      <ScrollAnchor jump={anc} />
       <About />
     </>
   )

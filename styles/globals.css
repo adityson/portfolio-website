@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   /* background: #ebf8ff !important; */
   background-image: url(/static/images/bgpattern.svg) !important;

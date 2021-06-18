@@ -4,7 +4,7 @@ import BoxIn from './BoxIn';
 
 const About = () => {
     return (
-        <Flex flexDirection='column' alignItems='center' marginBottom='100px' mx='40px'>
+        <Flex id='about' flexDirection='column' alignItems='center' marginBottom='100px' mx='40px'>
             <Heading as='h3' size='2xl' marginBottom='36px' color='#065666'>About Me</Heading>
             <Flex flexDirection='column' alignItems='center'>
                 <BoxIn childWidth='900px'>
