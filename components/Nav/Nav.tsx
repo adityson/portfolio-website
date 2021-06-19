@@ -50,6 +50,7 @@ const Nav = () => {
                     pt={[2,2,0,0]}
                     mx={[0,0,12,12]}
                 >
+                    {mobileNav.isOpen && <LinkLi to='/' LinkText='Home' />}
                     <LinkLi to='/projects' LinkText='Projects' />
                     <LinkLi to='/tech#tech' LinkText='Technologies' />
                 </Stack>
