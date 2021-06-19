@@ -15,8 +15,8 @@ const tech = () => {
             <title>Techno|Portfolio</title>
         </Head>
         <Flex flexDirection='column'>
-            <Flex id='tech' flexDirection='column'>
-                <Heading as='h2' size='4xl' marginTop='100px' textAlign='center' width='100%'>
+            <Flex id='tech' flexDirection='column' px={{base: '10px', md: '0px'}}>
+                <Heading as='h2' fontSize={{base: '5xl', md: '7xl'}} marginTop='100px' textAlign='center' width='100%'>
                     Technology 
                 </Heading>
                 <Text fontSize='sm' textAlign='center' marginTop='20px'>A brief showcase of technologies and tools I've worked with.</Text>

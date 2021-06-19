@@ -9,7 +9,7 @@ interface toolProps {
 const ToolSingle = ({ toolInfo }: toolProps) => {
     return (
         <Flex as='a' href={toolInfo.link} my={3}>
-            <Flex _hover={{ border: '2px solid #76E4F7' }} p={3} borderRadius='12px' boxShadow='md' w='500px' border='2px solid transparent'>
+            <Flex _hover={{ border: '2px solid #76E4F7' }} p={3} borderRadius='12px' boxShadow='md' w={{base: '300px', md: '500px'}} border='2px solid transparent' alignItems='center'>
                 <Box boxSize='60px' bg='gray.200' p='8px' borderRadius='12px' alignItems='center'>
                     <Image src={`/static/images/toolImg/${toolInfo.id}.png`} />
                 </Box>
