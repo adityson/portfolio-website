@@ -1,18 +1,16 @@
 import React from 'react'
 import Link from 'next/link';
-import { Flex, Heading, Box, Stack} from '@chakra-ui/react';
+import { Flex, Heading, Box, Stack, useDisclosure } from '@chakra-ui/react';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import LinkLi from './LinkLi';
 import LinkIcon from './LinkIcon';
-import { useState } from 'react';
 import { VscClose } from 'react-icons/vsc';
 import { FiMenu } from 'react-icons/fi';
-import { linear } from 'popmotion';
 
 
 const Nav = () => {
 
-    const [isOpen, setIsOpen] = useState(false);
+    const mobileNav = useDisclosure();
 
     return (
         <Flex as='nav' position='fixed' align='center' wrap='wrap' w='100%' justifyContent='space-around' padding='10px 5%' bgColor='#38B2AC' color='white'>
@@ -33,11 +31,11 @@ const Nav = () => {
                     </Heading>
                 </Link>
             </Flex>
-            <Box display={{ base: 'block', md: 'none' }} p='4px' onClick={() => setIsOpen(!isOpen)} overflow='hidden' borderRadius='6px' border='1px solid #F0FFF4' cursor='pointer'>
-                {isOpen ? <VscClose /> : <FiMenu />}
+            <Box display={{ base: 'block', md: 'none' }} p='4px' onClick={mobileNav.isOpen ? mobileNav.onClose : mobileNav.onOpen} overflow='hidden' borderRadius='6px' border='1px solid #F0FFF4' cursor='pointer'>
+                {mobileNav.isOpen ? <VscClose /> : <FiMenu />}
             </Box>
-            <Box display={{ base: isOpen ? 'block' : 'none', md: 'flex'}} flexBasis={{ base: '100%', md: 'auto' }}>
-                {isOpen && <hr style={{ background: 'linear-gradient(to right, #38B2AC, #C6F6D5, #38B2AC)', height: '1px', border: '0', marginTop: '2px' }}/>}
+            <Box display={{ base: mobileNav.isOpen ? 'block' : 'none', md: 'flex'}} flexBasis={{ base: '100%', md: 'auto' }}>
+                {mobileNav.isOpen && <hr style={{ background: 'linear-gradient(to right, #38B2AC, #C6F6D5, #38B2AC)', height: '1px', border: '0', marginTop: '2px' }}/>}
                 <Stack 
                     spacing={4} 
                     align='center' 
