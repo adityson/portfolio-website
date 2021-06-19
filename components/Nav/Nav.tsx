@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useRouter } from 'next/router';
 import Link from 'next/link';
 import { Flex, Heading, Box, Stack, useDisclosure } from '@chakra-ui/react';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
@@ -11,6 +12,11 @@ import { FiMenu } from 'react-icons/fi';
 const Nav = () => {
 
     const mobileNav = useDisclosure();
+
+    const router = useRouter();
+    useEffect(() => {
+        mobileNav.onClose();
+    }, [router.pathname])
 
     return (
         <Flex as='nav' position='fixed' align='center' wrap='wrap' w='100%' justifyContent='space-around' padding='10px 5%' bgColor='#38B2AC' color='white'>
