@@ -13,13 +13,13 @@ export default function Home() {
         <title>Home|Portfolio</title>
       </Head>
 
-      <Flex id='intro' height='100vh' justifyContent='center' alignItems='center'>
-        <Flex margin="0 30px">
+      <Flex id='intro' height='100vh' px={{base: '16px', md: '0px'}} justifyContent='center' alignItems='center' flexDirection={['column', 'column', 'row', 'row']}>
+        <Flex margin="10px 30px">
           <Image src='/static/images/meee.jpg' boxSize='250px' borderRadius='24px' />
         </Flex>
         <Flex flexDirection='column'>
-          <Heading as='h1' size='4xl' marginBottom='20px' color='#065666'> Hello, I'm Aditya! </Heading>
-          <Text fontSize='xl' maxW='650px'>
+          <Heading as='h1' size='4xl' marginBottom='20px' color='#065666' textAlign={{base: 'center', md: 'left'}}> Hello, I'm Aditya! </Heading>
+          <Text fontSize={{base: 'lg', md: 'xl'}} maxW='650px'>
             Welcome to my website! Finally decided to make one about myself. 
             I plan to regularly maintain the domain and add updates to the sections 
             as I venture into the world of Software Development.
