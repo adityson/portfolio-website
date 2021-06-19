@@ -12,20 +12,20 @@ interface projectProps {
 const Project = ({ projectInfo, repo }: projectProps) => {
     return (
         <Flex marginBottom={20}> 
-        <Box w='1000px' rounded='20px' overflow='hidden' boxShadow='xl' bg='#EDF2F7'>
+        <Box w={{base: '300px' ,md: '1000px'}} rounded='20px' overflow='hidden' boxShadow='xl' bg='#EDF2F7'>
             <Image 
                 src={projectInfo.image} 
             />
             <Box p={5}>
                 <Stack isInline align='center' justifyContent='space-between'>
-                    <Heading as='h3' size='lg'>{projectInfo.name}</Heading>
-                    <Badge variant='solid' colorScheme='green' rounded='full' px={2} py={1} fontSize='sm'>{repo.language}</Badge>
+                    <Heading as='h3' fontSize={{base: 'xl', md: '4xl'}}>{projectInfo.name}</Heading>
+                    <Badge variant='solid' colorScheme='green' rounded='full' px={2} py={1} fontSize={{base: '10px',md: 'sm'}}>{repo.language}</Badge>
                 </Stack>
                 <Stack isInline align='baseline' my={2} justify='space-between'>
-                    <Text fontSize='md' fontWeight='semibold'>{projectInfo.createMonth}</Text>
-                    <Text fontSize='sm' fontWeight='light'>Last Updated: {new Date(repo.pushed_at).toLocaleDateString()}</Text>
+                    <Text isTruncated fontSize={{base: 'sm', md: 'md'}} fontWeight='semibold'>{projectInfo.createMonth}</Text>
+                    <Text textAlign='end' fontSize={{base: '12px',md: 'sm'}} fontWeight='light'>Last Updated: {new Date(repo.pushed_at).toLocaleDateString()}</Text>
                 </Stack>
-                <Text fontSize='md' fontWeight='normal' my={2}>{projectInfo.description}</Text>
+                <Text fontSize={{base: 'sm', md: 'md'}} fontWeight='normal' my={2}>{projectInfo.description}</Text>
             </Box>
             <Box textAlign='center'>
                 <Button 
@@ -34,6 +34,7 @@ const Project = ({ projectInfo, repo }: projectProps) => {
                     position='inherit'
                     variant='outline' 
                     borderColor='#A0AEC0'
+                    fontSize={{base: 'sm', md: 'md'}}
                     leftIcon={<VscGithubAlt />} 
                     mb={4}
                     _hover={{ bgColor: '#CBD5E0' }}

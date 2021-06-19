@@ -19,7 +19,7 @@ const Nav = () => {
     }, [router.pathname])
 
     return (
-        <Flex as='nav' position='fixed' align='center' wrap='wrap' w='100%' justifyContent='space-around' padding='10px 5%' bgColor='#38B2AC' color='white'>
+        <Flex as='nav' position='fixed' align='center' wrap='wrap' w='100%' justifyContent={{base: 'space-between', md: 'space-around'}} padding='10px 5%' bgColor='#38B2AC' color='white'>
             <Flex>
                 <Link href='/#intro'>
                     <Heading 
@@ -28,7 +28,7 @@ const Nav = () => {
                         padding='8px'
                         textAlign='center'
                         width='200px'
-                        margin='0 20px'
+                        margin={{base: '0px', md: '0 20px'}}
                         borderRadius='15px'
                         transition='all 0.2s ease'
                         _hover={{bgColor: '#2C7A7B', cursor: 'pointer'}} 
