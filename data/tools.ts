@@ -30,6 +30,12 @@ export const tools: toolType[] = [
         description: 'Text interface to the computer.'
     },
     {
+        id: 'tmux',
+        name: 'Tmux',
+        link: `https://github.com/tmux/tmux/wiki`,
+        description: 'Terminal multiplexer with lots of features.'
+    },
+    {
         id: 'latex',
         name: 'Latex',
         link: `https://www.latex-project.org/`,
