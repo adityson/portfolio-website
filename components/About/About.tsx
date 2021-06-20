@@ -16,7 +16,7 @@ const About = () => {
                 </BoxIn>
                 <BoxIn childWidth='750px'>
                     <Text fontSize={{base: 'md', md: 'xl'}}> 
-                        Problem Solving using Data Structures and Algorithms fascinates me so I regularly keep up with that too, 
+                        Problem Solving using Data Structures and Algorithms fascinates me so I regularly keep up with that, 
                         and I'm enthusiastic to dive deep to learn more.
                     </Text>
                 </BoxIn>
