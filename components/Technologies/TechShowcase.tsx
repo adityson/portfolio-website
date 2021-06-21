@@ -7,7 +7,7 @@ const TechShowcase = () => {
     return (
         <Flex wrap='wrap' padding='0 100px' marginTop={16} justifyContent='space-around'>
             <Flex flexDirection='column' alignItems='center' w='400px' marginBottom={{base: '40px', md: '0px'}}>
-                <Image boxSize='200px' my={2} src='/static/images/frontend.png' />
+                <Image boxSize='200px' my={2} src='/static/images/frontend.png' alt='front end' />
                 <Heading as='h3' size='xl' my={2}>
                     Front-End
                 </Heading>
@@ -18,7 +18,7 @@ const TechShowcase = () => {
                 </Flex>
             </Flex>
             <Flex flexDirection='column' alignItems='center' w='400px'>
-                <Image h={{base: '160px', md: '200px'}} my={2} src='/static/images/backend.png' />
+                <Image h={{base: '160px', md: '200px'}} my={2} src='/static/images/backend.png' alt='back end' />
                 <Heading as='h3' size='xl' my={2}>
                     Back-End
                 </Heading>

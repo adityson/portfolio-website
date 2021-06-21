@@ -15,6 +15,7 @@ const Project = ({ projectInfo, repo }: projectProps) => {
         <Box w={{base: '300px' ,md: '1000px'}} rounded='20px' overflow='hidden' boxShadow='xl' bg='#EDF2F7'>
             <Image 
                 src={projectInfo.image} 
+                alt={`${projectInfo.name} screenshot`}
             />
             <Box p={5}>
                 <Stack isInline align='center' justifyContent='space-between'>

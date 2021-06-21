@@ -1,11 +1,14 @@
 import Head from 'next/head'
-import { Flex, Heading, Text, Image } from '@chakra-ui/react'
+import { useState } from 'react'
+import { Flex, Heading, Text, Image, Skeleton } from '@chakra-ui/react'
 import About from '../components/About/About'
 import ScrollAnchor from '../components/ScrollAnchor/ScrollAnchor'
 
 export default function Home() {
 
   const anc: string[] = ['#about', '#intro'];
+
+  const [pfpLoad, setPfpLoad] = useState(false);
 
   return (
     <>
@@ -15,7 +18,9 @@ export default function Home() {
 
       <Flex id='intro' height='100vh' px={{base: '16px', md: '0px'}} justifyContent='center' alignItems='center' flexDirection={['column', 'column', 'row', 'row']}>
         <Flex margin="10px 30px">
-          <Image src='/static/images/meee.jpg' boxSize={{base: '170px', md: '250px'}} borderRadius='24px' />
+          <Skeleton isLoaded={pfpLoad} borderRadius='24px' boxSize={{base: '170px', md: '250px'}}>
+            <Image src='/static/images/meee.jpg' alt='Aditya Soni (image)' onLoad={() => setPfpLoad(true)} boxSize={{base: '170px', md: '250px'}} borderRadius='24px' />
+          </Skeleton>
         </Flex>
         <Flex flexDirection='column'>
           <Heading as='h1' fontSize={{base: '5xl', md: '7xl'}} marginBottom='20px' color='#065666' textAlign={{base: 'center', md: 'left'}}> Hello, I'm Aditya! </Heading>
