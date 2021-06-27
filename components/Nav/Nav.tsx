@@ -22,11 +22,9 @@ const Nav = () => {
       position="fixed"
       alignItems="center"
       wrap="wrap"
-      w="90%"
-      mx="5%"
-      borderRadius="20px"
+      w="100%"
       justifyContent={{ base: "space-between", md: "space-around" }}
-      padding="8px 3%"
+      p="8px 4%"
       bgColor="#38B2AC"
       color="white"
     >
@@ -86,12 +84,16 @@ const Nav = () => {
           pt={[2, 2, 0, 0]}
           mx={[0, 0, 12, 12]}
         >
-          {mobileNav.isOpen && <LinkLi to="/" LinkText="Home" />}
-          <LinkLi to="/projects" LinkText="Projects" />
-          <LinkLi to="/tech#tech" LinkText="Technologies" />
+          {mobileNav.isOpen && (
+            <>
+              <LinkLi to="/" LinkText="Home" />
+              <LinkLi to="/projects" LinkText="Projects" />
+              <LinkLi to="/tech#tech" LinkText="Technologies" />
+            </>
+          )}
         </Stack>
         <Stack
-          spacing={4}
+          spacing={1.5}
           align="center"
           justifyContent={[
             "center",
