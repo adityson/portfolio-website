@@ -36,6 +36,7 @@ const MobileNav = () => {
             size="lg"
             padding="8px"
             textAlign="center"
+            fontFamily="Satisfy"
             width="200px"
             borderRadius="15px"
             transition="all 0.2s ease"
