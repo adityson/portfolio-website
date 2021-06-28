@@ -17,9 +17,8 @@ const LinkIcon = ({ to, icon }: Props) => {
         bgColor="inherit"
         marginTop={{ base: "0", md: "4vh" }}
         fontSize={{ base: "3xl", md: "5xl" }}
-        transition="all 0.4s ease"
-        border="1px solid transparent"
-        _hover={{ border: "1px solid #ebf8ff" }}
+        transition="all 0.2s ease"
+        _hover={{ transform: "scale(1.2)" }}
         icon={icon}
       />
     </li>

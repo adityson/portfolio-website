@@ -11,6 +11,7 @@ const Intro = () => {
       alignItems="center"
       px={{ base: "16px", md: "0px" }}
       flexDirection={["column", "column", "row", "row"]}
+      marginTop={{ base: "100px", md: "0" }}
     >
       <Flex margin="10px 30px">
         <Skeleton
