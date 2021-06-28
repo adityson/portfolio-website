@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import {
   useDisclosure,
   Button,
-  Text,
+  Heading,
   Box,
   Flex,
   Drawer,
@@ -11,6 +11,7 @@ import {
   DrawerContent,
   DrawerHeader,
   DrawerBody,
+  DrawerFooter,
 } from "@chakra-ui/react";
 import { RiMenu4Line } from "react-icons/ri";
 import LinkLi from "./LinkLi";
@@ -54,9 +55,14 @@ const DesktopNav = () => {
         <DrawerOverlay />
         <DrawerContent bgColor="#2b6cb0">
           <DrawerHeader>
-            <Text fontSize="4xl" color="white" textAlign="center">
+            <Heading
+              fontSize="6xl"
+              color="white"
+              textAlign="center"
+              fontFamily="Satisfy"
+            >
               Aditya Soni
-            </Text>
+            </Heading>
           </DrawerHeader>
           <hr
             style={{
@@ -82,6 +88,16 @@ const DesktopNav = () => {
               />
             </Flex>
           </DrawerBody>
+          <DrawerFooter>
+            <Heading
+              fontSize="4xl"
+              color="white"
+              textAlign="center"
+              fontFamily="Orbitron"
+            >
+              Portfolio
+            </Heading>
+          </DrawerFooter>
         </DrawerContent>
       </Drawer>
     </>

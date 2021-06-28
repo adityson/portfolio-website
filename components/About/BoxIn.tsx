@@ -14,6 +14,9 @@ const BoxIn = ({ children, childWidth, hasPartition }: Props) => {
       alignItems="center"
       p={5}
       maxW={childWidth}
+      border="1px solid transparent"
+      borderRadius="20px"
+      _hover={{ border: "1px solid #4299e1" }}
       borderLeft={hasPartition ? "1px solid #4299e1" : "none"}
       my={5}
       mx={4}
