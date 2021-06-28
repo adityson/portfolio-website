@@ -1,26 +1,29 @@
-import React from 'react';
-import { Button } from '@chakra-ui/react'
+import React from "react";
+import { IconButton } from "@chakra-ui/react";
 
 interface Props {
-   children: React.ReactNode; 
-   to: string;
+  to: string;
+  icon: React.ReactElement;
 }
 
-const LinkIcon = ({ children, to }: Props) => {
-    return (
-        <li style={{ listStyle: 'none' }}>
-            <Button 
-                as='a' 
-                href={to}
-                borderRadius='50px'
-                bgColor='#38B2AC'
-                transition='all 0.4s ease'
-                _hover={{ bgColor: '#2C7A7B', transform: 'scale(1.2)' }}
-            >
-                {children}
-            </Button>
-        </li> 
-    )
-}
+const LinkIcon = ({ to, icon }: Props) => {
+  return (
+    <li style={{ listStyle: "none" }}>
+      <IconButton
+        aria-label=""
+        as="a"
+        href={to}
+        borderRadius="15px"
+        bgColor="inherit"
+        marginTop={{ base: "0", md: "4vh" }}
+        fontSize={{ base: "3xl", md: "5xl" }}
+        transition="all 0.4s ease"
+        border="1px solid transparent"
+        _hover={{ border: "1px solid #ebf8ff" }}
+        icon={icon}
+      />
+    </li>
+  );
+};
 
 export default LinkIcon;

@@ -7,6 +7,7 @@ const InsiteLinks = () => {
     <HStack
       marginTop={{ base: "20px", md: "80px" }}
       justifyContent="space-around"
+      spacing={{ base: "5%", md: "10%" }}
     >
       <LinkBox to="/projects">
         <Heading fontSize={{ base: "xl", md: "6xl" }}>Projects</Heading>
